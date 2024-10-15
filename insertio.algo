@@ -1,0 +1,22 @@
+ALGORITHM insertion-sort
+VAR
+    i,j,aux:integer
+    t:integer[100]
+BEGIN
+    REPEAT
+        read(n)
+     UNTIL (n<=100 and n>0)
+    FOR i FROM 0 TO n-1  DO
+        read (t[i])
+    END_FOR
+    FOR i FROM 1 TO n-1 DO
+     aux:=t[i]
+     j:=j-1
+     whil(j>=0 and aux<t[j])
+    t[j+1]:=t[j]
+    j:=j-1
+    
+    END_WHILE
+    t[j+1]:= aux
+    END_FOR
+END
